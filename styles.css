@@ -1,0 +1,32 @@
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 200px 40px;
+    gap: 3px;
+    grid-template-areas: 
+    ". h h h h h h h h h h ."
+    "m c c c c c c c c c c c"
+    ". f f f f f f f f f f .";
+}
+
+.header {
+    grid-area: h;
+    background-color: pink;
+}
+
+.menu {
+    grid-area: m;
+    background-color: lavender;
+    
+}
+
+.content {
+    grid-area: c;
+    background-color: lavender;
+}
+
+.footer {
+    grid-area: f;
+    background-color: pink;
+}
